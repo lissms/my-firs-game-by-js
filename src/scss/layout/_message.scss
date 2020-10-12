@@ -9,10 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /*  height: 0;
-  display: none; */
-  /* posible animacion */
+  animation: desend 1s 1;
 
   &__title {
     width: 246px;
@@ -75,4 +72,18 @@
 
   box-sizing: content-box;
   margin: 30px 0 40px 0;
+}
+
+@keyframes desend {
+  from {
+    height: 0vh;
+  }
+  to {
+    height: 87vh;
+  }
+}
+
+/* class to JS */
+.none {
+  display: none;
 }

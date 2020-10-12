@@ -25,6 +25,7 @@
 }
 .clock {
   margin-left: 22px;
+  width: 70px;
 }
 .form__select {
   width: 255px;
@@ -39,17 +40,7 @@
   font-size: 13px;
   line-height: 19px;
 }
-.form__message {
-  width: 255px;
-  height: 94px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #ffffff;
-}
+
 .form__play-button {
   width: 255px;
   height: 47px;
@@ -68,6 +59,9 @@
   margin-bottom: 40px;
 }
 .form__message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 255px;
   height: 94px;
   font-family: Poppins;
@@ -75,8 +69,28 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
   color: #ffffff;
-  border: solid 1px white;
   margin-bottom: 41px;
+}
+
+.lifeAnimation {
+  transform: scale(1);
+  animation: 2s ease infinite lifeanimation;
+}
+@keyframes lifeanimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.red {
+  color: red;
+}
+.gray {
+  background-color: gray;
 }
