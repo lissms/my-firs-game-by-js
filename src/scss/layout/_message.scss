@@ -1,0 +1,20 @@
+.message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 582px;
+  width: 100%;
+  background: linear-gradient(180deg, #ff9671 85.23%, #ffb196 100%);
+  padding: 40px 51px 30px 53px;
+
+  &__title {
+    width: 246px;
+    height: 32px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    color: #ffffff;
+  }
+}
