@@ -80,13 +80,17 @@ function lifes() {
   let numberOfLife = document.querySelector(".js-number");
   const lostlives = 1;
   let numberLife = 3;
+  const heart = document.querySelector(".js-life");
 
   function numberOfLiveRemaining() {
     numberLife = numberLife - lostlives;
     const remainingLife = numberLife;
     numberOfLife.innerHTML = remainingLife;
-    const heart = document.querySelector(".js-life");
+
     heart.classList.add("lifeAnimation");
+    setTimeout(() => {
+      heart.classList.remove("lifeAnimation");
+    }, 1000);
 
     if (remainingLife === 0) {
       message.innerHTML = "Lo siento, se han terminado tus oportunidades";
