@@ -1,44 +1,29 @@
 <div class="js-new-windows"></div>
 <main class="main">
-  <div class="main__life-timer-container">
-    <div class="heart" >
-      <img src="./assets/images/heart.svg" alt="" class="life js-life" title="life" />
-      <span class="number js-number">3</span>
+  <div class="all-container">
+    <div class="main__life-timer-container">
+      <div class="heart">
+        <img src="./assets/images/heart.svg" alt="" class="life js-life" title="life" />
+        <span class="number js-number">3</span>
+      </div>
+      <div class="clock">
+        <img src="./assets/images/clock.svg" alt="" class="timer" title="timer" />
+        <span class="number js-timer">60</span>
+      </div>
     </div>
-   <div class="clock">
-    <img src="./assets/images/clock.svg" alt="" class="timer" title="timer" />
-    <span class="number js-timer">60</span>
-   </div>
-    
+
+    <form class="from__professions">
+      <select name="my-profession-is" id="my-profession-is" class="form__select js-select">
+        <option value="choose" class="js-choose">Despliega las opciones</option>
+        <option value="journalis" class="js-journalism">Periodismo</option>
+        <option value="history" class="js-history">Historia</option>
+        <option value="physical" class="js-physical">Física</option>
+        <option value="biology" class="js-biology">Biologia</option>
+        <option value="design" class="js-design">Diseño gráfico</option>
+        <option value="layout" class="js-layout">Maquetacion web</option>
+      </select>
+      <p class="form__message js-message"></p>
+      <input type="button" name="juega" value="Play" class="form__play-button js-play-button" />
+    </form>
   </div>
-
-
-
-  <form class="from__professions">
-    <select
-      name="my-profession-is"
-      id="my-profession-is"
-      class="form__select js-select"
-    >
-      <option value="choose" class="js-choose">
-        Despliega las opciones
-      </option>
-      <option value="journalis" class="js-journalism">Periodismo</option>
-      <option value="history" class="js-history">Historia</option>
-      <option value="physical" class="js-physical">Física</option>
-      <option value="biology" class="js-biology">Biologia</option>
-      <option value="design" class="js-design">Diseño gráfico</option>
-      <option value="layout" class="js-layout">Maquetacion web</option>
-    </select>
-    <p class="form__message js-message">
-      
-    </p>
-    <input
-      type="button"
-      name="juega"
-      value="Play"
-      class="form__play-button js-play-button"
-    />
-  </form>
-  </form>
 </main>

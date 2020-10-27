@@ -1,16 +1,23 @@
 .main {
   width: 100%;
-  height: 59.22vh;
+  height: 64.22vh;
   background: linear-gradient(37.47deg, #00cea2 1.24%, #00c0ff 100%);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   &__life-timer-container {
     display: flex;
     justify-content: center;
     margin-top: 31px;
   }
+}
+.all-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .number {
   width: 15px;
@@ -33,7 +40,7 @@
   background: #ffffff;
   border: 4px solid rgba(255, 255, 255, 0.75);
   border-radius: 12px;
-  margin: 31px 0;
+  margin: 20px 0 5px 0;
   font-family: Poppins;
   font-style: normal;
   font-weight: 300;
@@ -63,14 +70,14 @@
   justify-content: center;
   align-items: center;
   width: 255px;
-  height: 94px;
+  height: 60px;
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
-  margin-bottom: 41px;
+  /* margin-bottom: 41px; */
 }
 
 .lifeAnimation {
