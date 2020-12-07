@@ -33,6 +33,12 @@
   background-position: -58px -2px;
   background-repeat: no-repeat;
   border-radius: 12px;
+
+  @media (min-width: 480px) {
+    background-position: -91px -2px;
+    width: 474px;
+    height: 555px;
+  }
 }
 .titlle-container {
   display: flex;
